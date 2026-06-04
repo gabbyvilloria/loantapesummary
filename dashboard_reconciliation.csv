@@ -1,0 +1,9 @@
+month,location_id,location_name,fleet_metrics_amount_collected,export_amount_collected_on_charges,export_net_payment_tenders,fleet_minus_export_charges,fleet_minus_export_payments
+2026-01,-OKUWSpSdOYBTv9Np7ti,Boracay,4239845,4242845,4257895,-3000,-18050
+2026-02,-OKUWSpSdOYBTv9Np7ti,Boracay,4191225,4194150,4202750,-2925,-11525
+2026-03,-OKUWSpSdOYBTv9Np7ti,Boracay,4981400,4981400,4999175,0,-17775
+2026-04,-OKUWSpSdOYBTv9Np7ti,Boracay,5512460,5512460,5519610,0,-7150
+2026-01,-OKUWVKOXcTb9DYg_BQn,Coron,935600,935600,935600,0,0
+2026-02,-OKUWVKOXcTb9DYg_BQn,Coron,924400,926400,926900,-2000,-2500
+2026-03,-OKUWVKOXcTb9DYg_BQn,Coron,947100,947100,947100,0,0
+2026-04,-OKUWVKOXcTb9DYg_BQn,Coron,928080,941080,941080,-13000,-13000
