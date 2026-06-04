@@ -32,8 +32,11 @@ The funder receives:
 | Voided payments | 201 (PHP 250,219.93) |
 | SOA ledger lines | 95,024 |
 | Gross charge amount (positive, non-voided charges) | PHP 22,862,485.00 |
-| Outstanding unpaid balance (ledger snapshot in range) | PHP 181,450.00 |
-| Collection rate (fleet-aligned / gross charges) | 99.21% |
+| Discounts (SOA negative lines, Jan–Apr) | PHP 141,924.79 |
+| Net billings (gross − discounts) | PHP 22,720,560.21 |
+| **Net balance due** (after discounts, fleet method) | PHP 46,850.21 |
+| Line-level unpaid (before discount netting — overstated) | PHP 181,450.00 |
+| Collection rate (fleet-aligned / net billings) | 99.83% |
 | Data reconciliation | Allocation diff PHP 0.00; SOA PAYMENT mirror diff PHP 0.00 |
 | Review exceptions | 449 (1 WARN) |
 
@@ -51,8 +54,8 @@ The funder receives:
 
 ## Location overview
 
-- **Boracay**: PHP 18,930,855.00 on charges (fleet-aligned); PHP 18,979,430.00 payment tenders; PHP 145,800.00 unpaid across 174 drivers
-- **Coron**: PHP 3,750,180.00 on charges (fleet-aligned); PHP 3,750,680.00 payment tenders; PHP 35,650.00 unpaid across 20 drivers
+- **Boracay**: PHP 18,930,855.00 on charges (fleet-aligned); PHP 18,979,430.00 payment tenders; PHP 11,500.21 net balance due (16 drivers)
+- **Coron**: PHP 3,750,180.00 on charges (fleet-aligned); PHP 3,750,680.00 payment tenders; PHP 35,350.00 net balance due (19 drivers)
 
 ---
 
@@ -68,13 +71,15 @@ Charges are primarily **vehicle lease**, **unlimited battery fees**, and **batte
 
 ## Receivables aging (unpaid balances)
 
-- **1-7 DPD**: PHP 4,700.00 (19 items, 12 drivers)
-- **8-30 DPD**: PHP 25,425.00 (175 items, 71 drivers)
-- **31-60 DPD**: PHP 60,850.00 (145 items, 82 drivers)
-- **61-90 DPD**: PHP 72,485.00 (559 items, 128 drivers)
-- **90+ DPD**: PHP 17,840.00 (97 items, 67 drivers)
+- **1-7 DPD**: PHP 2,650.00 (7 driver-days, 7 drivers)
+- **8-30 DPD**: PHP 8,600.00 (11 driver-days, 10 drivers)
+- **31-60 DPD**: PHP 16,600.00 (17 driver-days, 10 drivers)
+- **61-90 DPD**: PHP 11,650.00 (13 driver-days, 7 drivers)
+- **90+ DPD**: PHP 7,350.00 (8 driver-days, 6 drivers)
 
-Largest single-driver unpaid balance in export: **PHP 9,450.00** (Boracay, oldest unpaid date 2026-03-07, 54 days).
+*Aging uses **net balance due** per driver-day (gross − discounts − collected), matching Fleet Operations. Do not sum `remaining_amount` on individual SOA lines — that ignores ~PHP 134,599.79 of day-level discounts.*
+
+Largest single-driver unpaid balance in export: **PHP 4,000.00** (Coron, oldest unpaid date 2026-02-12, 77 days).
 
 ---
 

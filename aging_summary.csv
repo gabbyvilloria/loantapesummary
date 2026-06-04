@@ -1,7 +1,6 @@
-aging_bucket,driver_count,unpaid_item_count,unpaid_amount,pct_of_total_unpaid
-Current,2,4,150,0.08
-1-7 DPD,12,19,4700,2.59
-8-30 DPD,71,175,25425,14.01
-31-60 DPD,82,145,60850,33.54
-61-90 DPD,128,559,72485,39.95
-90+ DPD,67,97,17840,9.83
+aging_bucket,driver_count,unpaid_driver_days,unpaid_amount,pct_of_total_unpaid
+1-7 DPD,7,7,2650,5.66
+8-30 DPD,10,11,8600,18.36
+31-60 DPD,10,17,16600,35.43
+61-90 DPD,7,13,11650,24.87
+90+ DPD,6,8,7350,15.69

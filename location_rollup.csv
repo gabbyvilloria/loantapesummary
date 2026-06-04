@@ -1,3 +1,3 @@
-location_name,payment_count,total_collected,amount_collected_on_charges,gross_charge_lines,gross_charge_amount,unpaid_item_count,unpaid_amount,drivers_with_unpaid
-Boracay,12412,18979430,18930855,24010,19076655,958,145800,174
-Coron,4253,3750680,3750180,3800,3785830,41,35650,20
+location_name,payment_count,total_collected,amount_collected_on_charges,gross_charge_lines,gross_charge_amount,net_balance_due,drivers_with_net_unpaid
+Boracay,12412,18979430,18930855,24010,19076655,11500.21,16
+Coron,4253,3750680,3750180,3800,3785830,35350,19

@@ -1,0 +1,7 @@
+aging_bucket,unpaid_item_count,unpaid_amount,note
+90+ DPD,97,17840,Does not net discounts across SOA day — use aging_summary.csv
+61-90 DPD,559,72485,Does not net discounts across SOA day — use aging_summary.csv
+31-60 DPD,145,60850,Does not net discounts across SOA day — use aging_summary.csv
+8-30 DPD,175,25425,Does not net discounts across SOA day — use aging_summary.csv
+1-7 DPD,19,4700,Does not net discounts across SOA day — use aging_summary.csv
+Current,4,150,Does not net discounts across SOA day — use aging_summary.csv
